@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/icons/clmi.png";
+import logo from "../assets/icons/logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { constants } from "../utils/constants";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -11,10 +11,10 @@ const NavBar = () => {
 
   return (
     <nav className="w-full bg-white text-black h-16 flex items-center justify-between px-5 relative">
-      <Link to={"/"} className="flex items-center gap-2">
+      <Link to={"/"} className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
         <img
           src={logo}
-          className="w-[80px] md:w-[80px] h-[80px] xl:ml-20 lg:ml-10 md:ml-6"
+          className="w-[70px] md:w-[70px] h-[70px] mt-4 xl:ml-20 lg:ml-10 md:ml-6"
           alt="Logo"
         />
       </Link>
@@ -26,16 +26,16 @@ const NavBar = () => {
             <Link
               key={i}
               to={item.link}
-              className={`hover:text-blue-900 ${
+              className={`hover:text-primary-dim ${
                 location.pathname === item.link
-                  ? "text-[#073260] font-bold text-lg "
+                  ? "text-primary font-bold text-lg "
                   : "font-medium"
               }`}
             >
               {item.label}
             </Link>
             {location.pathname === item.link && (
-              <div className="bg-[#073260] h-0.5" />
+              <div className="bg-primary h-0.5" />
             )}
           </div>
         ))}
@@ -52,7 +52,7 @@ const NavBar = () => {
 
       {/* Mobile Hamburger */}
       <button
-        className="lg:hidden text-blue-800 focus:outline-none"
+        className="lg:hidden text-blue-700 focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Open menu"
       >
@@ -77,7 +77,7 @@ const NavBar = () => {
           <Link
             key={i}
             to={item.link}
-            className="text-blue-700 py-2 w-full text-center hover:bg-green/80"
+            className={`text-primary ${location.pathname === item.link ? "text-secondary-dim font-semibold text-lg": ""} font-medium py-2 w-full text-center hover:bg-green/70`}
             onClick={() => setMenuOpen(false)}
           >
             {item.label}
@@ -89,7 +89,7 @@ const NavBar = () => {
             navigate("/locations");
             setMenuOpen(false);
           }}
-          className="bg-blue-800 text-white px-12 py-4 font-semibold text-sm rounded-full cursor-pointer"
+          className="bg-secondary text-primary px-12 py-4 font-semibold text-sm rounded-full cursor-pointer"
         >
           Join Us
         </button>

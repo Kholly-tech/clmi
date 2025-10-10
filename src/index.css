@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-custom-yellow-500: #EDAE0A;
+  --color-primary: #073260;
+  --color-primary-dim: #043891;
+  --color-secondary: #FFB506;
+  --color-secondary-dim: #8c6404;
+};
+
 /* 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
