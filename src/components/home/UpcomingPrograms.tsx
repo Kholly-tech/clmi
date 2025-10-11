@@ -34,7 +34,7 @@ const UpcomingPrograms = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-8 px-3 md:px-10 lg:px-15 xl:px-25 gap-6">
         {upcomingPrograms.map((program, i) => (
-          <div>
+          <div key={i}>
             <div className="h-96">
               <img
                 src={program.image}

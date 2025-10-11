@@ -22,7 +22,7 @@ const NavBar = () => {
       {/* Desktop Nav */}
       <div className="hidden lg:flex items-center gap-10">
         {constants.navItems.map((item: any, i: number) => (
-          <div>
+          <div key={i}>
             <Link
               key={i}
               to={item.link}
