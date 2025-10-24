@@ -1,3 +1,9 @@
+import hero1 from '../assets/images/CLMI/hero2.jpg'
+import hero2 from '../assets/images/CLMI/hero2.jpg'
+import hero3 from '../assets/images/CLMI/hero2.jpg'
+import hero4 from '../assets/images/CLMI/hero2.jpg'
+import hero5 from '../assets/images/CLMI/hero2.jpg'
+
 export const constants = {
   navItems: [
     { label: "Home", link: "/" },
@@ -74,46 +80,50 @@ export const constants = {
     text1:
       "Comfort Life Mission International , where destinies are shaped through the undiluted Word of God, prophetic prayer, and vibrant fellowship.",
   },
+  vision:
+    "To raise kingdom champions by preaching the gospel, delivering the oppressed, nurturing destinies, and comforting lives through the Word and prophetic prayer",
+  mission:
+    "To see lives revived, families restored, and nations transformed by the power of God’s presence and truth",
   ministries: [
     {
-      image: "",
+      image: hero1,
       title: "Comfort Life Int'l College of Ministries - CLICOM",
-      desc: "",
+      desc: "Join us for a time of worship and fellowship every sunday",
       meetingDate: "",
       meetingTime: "",
       link: "/ministries#clicom",
     },
     {
-      image: "",
+      image: hero2,
       title: "Church Programs",
-      desc: "",
+      desc: "Join us for a time of worship and fellowship every sunday",
       meetingDate: "",
       meetingTime: "",
-      link: "/ministries#clicom",
+      link: "/ministries#church",
     },
     {
-      image: "",
+      image: hero3,
       title: "Crusade & Outreaches",
-      desc: "",
+      desc: "Join us for a time of worship and fellowship every sunday",
       meetingDate: "",
       meetingTime: "",
-      link: "/ministries#clicom",
+      link: "/ministries#crusades",
     },
     {
-      image: "",
+      image: hero4,
       title: "Camp - Jesus City",
-      desc: "",
+      desc: "Join us for a time of worship and fellowship every sunday",
       meetingDate: "",
       meetingTime: "",
-      link: "/ministries#clicom",
+      link: "/ministries#camp",
     },
     {
-      image: "",
+      image: hero5,
       title: "Odekunle Epaphras Foundation",
-      desc: "",
+      desc: "Join us for a time of worship and fellowship every sunday",
       meetingDate: "",
       meetingTime: "",
-      link: "/ministries#clicom",
+      link: "/ministries#foundation",
     },
   ],
 };

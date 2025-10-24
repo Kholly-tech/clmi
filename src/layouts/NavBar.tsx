@@ -14,13 +14,13 @@ const NavBar = () => {
       <Link to={"/"} className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
         <img
           src={logo}
-          className="w-[70px] md:w-[70px] h-[70px] mt-4 xl:ml-20 lg:ml-10 md:ml-6"
+          className="w-[70px] md:w-[70px] h-[70px] mt-4 xl:ml-20 lg:ml-10 md:ml-2"
           alt="Logo"
         />
       </Link>
 
       {/* Desktop Nav */}
-      <div className="hidden lg:flex items-center gap-10">
+      <div className="hidden md:flex items-center gap-10">
         {constants.navItems.map((item: any, i: number) => (
           <div key={i}>
             <Link
@@ -28,7 +28,7 @@ const NavBar = () => {
               to={item.link}
               className={`hover:text-primary-dim ${
                 location.pathname === item.link
-                  ? "text-primary font-bold text-lg "
+                  ? "text-primary font-extrabold text-lg "
                   : "font-medium"
               }`}
             >
@@ -40,11 +40,11 @@ const NavBar = () => {
           </div>
         ))}
       </div>
-      <div className="hidden lg:flex items-center justify-center gap-8 xl:mr-30">
+      <div className="hidden md:flex items-center justify-center gap-8 xl:mr-30">
         <button
           type="button"
           onClick={() => navigate("/locations")}
-          className="bg-secondary text-primary px-12 py-4 font-semibold text-sm rounded-full cursor-pointer"
+          className="bg-secondary text-primary px-8 py-4 font-semibold text-sm rounded-full cursor-pointer"
         >
           Join Us
         </button>
@@ -52,7 +52,7 @@ const NavBar = () => {
 
       {/* Mobile Hamburger */}
       <button
-        className="lg:hidden text-blue-700 focus:outline-none"
+        className="md:hidden text-blue-700 focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Open menu"
       >
@@ -64,7 +64,7 @@ const NavBar = () => {
       {/* Mobile Menu */}
       <div
         className={`
-          absolute top-20 left-0 w-full bg-white flex flex-col items-center py-4 z-50 lg:hidden
+          absolute top-20 left-0 w-full bg-white flex flex-col items-center py-4 z-50 md:hidden
           transition-all duration-300 ease-in-out
           ${
             menuOpen

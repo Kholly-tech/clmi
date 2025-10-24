@@ -162,11 +162,8 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          {/* Animated Subtitle */}
-          <h2 className="text-white/90 font-normal sm:text-lg md:text-xl lg:text-2xl tracking-wide animate-fade-in-up animation-delay-300"></h2>
-
           {/* Animated Button */}
-          <div className="mt-2 sm:mt-6 flex gap-4">
+          <div className="mt-8 sm:mt-14 md:text-lg flex gap-4">
             <div className="animate-fade-in-up animation-delay-600">
               <motion.button
                 initial={{ scale: 0 }}
@@ -181,7 +178,7 @@ const HeroSection = () => {
                 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-primary text-white py-5 px-16 font-semibold text-lg rounded-full mt-2 cursor-pointer"
+                className="bg-primary text-white py-2 md:py-5 px-4 md:px-16 font-semibold rounded-full mt-2 cursor-pointer"
                 onClick={() => navigate("/about")}
               >
                 Explore
@@ -201,7 +198,7 @@ const HeroSection = () => {
                 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-secondary text-primary py-5 px-16 font-semibold text-lg rounded-full mt-2 cursor-pointer"
+                className="bg-secondary text-primary py-2 md:py-5 px-4 md:px-16 font-semibold rounded-full mt-2 cursor-pointer"
                 onClick={() => navigate("/livestreams")}
               >
                 View Livestreams

@@ -18,7 +18,7 @@ const LifeToJesus = () => {
   };
 
   return (
-    <div className="items-center justify-center text-center my-15">
+    <div className="items-center justify-center text-center my-16">
       <div>
         <h2 className="text-primary font-extrabold text-4xl">
           Want to give your life to Christ?

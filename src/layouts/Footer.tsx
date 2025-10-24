@@ -40,12 +40,17 @@ const Footer = () => {
           <div className="mt-5 font-semibold text-lg">
             <span className="">Tel: +234 (0) 816 667 3443</span>
             <br />
-            <span className="">comfortlifemissionint@gmail.com</span>
+            <a
+              href="mailto:comfortlifemissionint@gmail.com"
+              className="cursor-pointer"
+            >
+              comfortlifemissionint@gmail.com
+            </a>
           </div>
           {/* </div> */}
         </div>
       </div>
-      <hr className="text-secondary-dim mt-8"/>
+      <hr className="text-secondary-dim mt-8" />
       <h6 className="text-center font-medium text-secondary mt-3 font-serif">
         &copy;{` Copyright CLMI ${currentYear}. | All Rights Reserved.`}
       </h6>
